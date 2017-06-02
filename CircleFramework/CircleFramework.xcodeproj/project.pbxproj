@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3FB853B71EE209F100F80C0E /* CircleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FB853B51EE209F100F80C0E /* CircleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FB853BE1EE20D0500F80C0E /* CirclePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB853BD1EE20D0500F80C0E /* CirclePath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FB853B21EE209F100F80C0E /* CircleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB853B51EE209F100F80C0E /* CircleFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleFramework.h; sourceTree = "<group>"; };
 		3FB853B61EE209F100F80C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB853BD1EE20D0500F80C0E /* CirclePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				3FB853B51EE209F100F80C0E /* CircleFramework.h */,
 				3FB853B61EE209F100F80C0E /* Info.plist */,
+				3FB853BD1EE20D0500F80C0E /* CirclePath.swift */,
 			);
 			path = CircleFramework;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					3FB853B11EE209F100F80C0E = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 6458MG576C;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB853BE1EE20D0500F80C0E /* CirclePath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +247,7 @@
 		3FB853BB1EE209F100F80C0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6458MG576C;
@@ -254,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.CircleFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +268,7 @@
 		3FB853BC1EE209F100F80C0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6458MG576C;
